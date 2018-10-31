@@ -1,19 +1,85 @@
 <view class="menu">
-    <scroll-view scroll-x="true" class="top-nav">
-        <view bindtap="toNav" data-seq="1" class="top-btn {{nav1}}">东</view>
-        <view bindtap="toNav" data-seq="2" class="top-btn {{nav2}}">西</view>
-        <view bindtap="toNav" data-seq="3" class="top-btn {{nav3}}">南</view>
-        <view bindtap="toNav" data-seq="4" class="top-btn {{nav4}}">北</view>
-        <view bindtap="toNav" data-seq="5" class="top-btn {{nav5}}">春季</view>
-        <view bindtap="toNav" data-seq="6" class="top-btn {{nav6}}">夏季</view>
-        <view bindtap="toNav" data-seq="7" class="top-btn {{nav7}}">秋季</view>
-        <view bindtap="toNav" data-seq="8" class="top-btn {{nav8}}">冬季</view>
-    </scroll-view>
+  <scroll-view scroll-x="true" class="top-nav">
+    <view bindtap="toNav" data-seq="1" class="top-btn {{nav1}}">东</view>
+    <view bindtap="toNav" data-seq="2" class="top-btn {{nav2}}">西</view>
+    <view bindtap="toNav" data-seq="3" class="top-btn {{nav3}}">南</view>
+    <view bindtap="toNav" data-seq="4" class="top-btn {{nav4}}">北</view>
+    <view bindtap="toNav" data-seq="5" class="top-btn {{nav5}}">春季</view>
+    <view bindtap="toNav" data-seq="6" class="top-btn {{nav6}}">夏季</view>
+    <view bindtap="toNav" data-seq="7" class="top-btn {{nav7}}">秋季</view>
+    <view bindtap="toNav" data-seq="8" class="top-btn {{nav8}}">冬季</view>
+  </scroll-view>
 </view>
 
-<scroll-view scroll-y="true" style="height: 600px;" class="">
+<view>
+  <scroll-view scroll-y="true" style="height:100%;" class="content">
     <loading hidden="{{hidden}}">
-        加载中...
+      加载中...
     </loading>
-    
-</scroll-view>
+    <view class="first line">
+      <image class="first-img" mode="scaleToFill" src="/resources/img/ht1.jpg"></image>
+    </view>
+
+    <view class="second line">
+      <view class="sl-col">
+        <image class="second-img" mode="scaleToFill" src="/resources/img/spring.jpg"></image>
+        <text>春</text>
+      </view>
+      <view class="sl-col">
+        <image class="second-img" mode="scaleToFill" src="/resources/img/summer.jpg"></image>
+        <text>夏</text>
+      </view>
+      <view class="sl-col">
+        <image class="second-img" mode="scaleToFill" src="/resources/img/autumn.jpg"></image>
+        <text>秋</text>
+      </view>
+      <view class="sl-col">
+        <image class="second-img" mode="scaleToFill" src="/resources/img/winter.jpg"></image>
+        <text>冬</text>
+      </view>
+    </view>
+
+    <view class="line list">
+      <image class="list-img" mode="scaleToFill" src="/resources/img/nutcracker.jpg"></image>
+      <view class="two-line-text">
+        <text class="text-center txt">胡桃夹子</text>
+        <text class="text-center txt">柴可夫斯基的芭蕾舞剧，讲述胡桃夹子与老鼠王的故事</text>
+      </view>
+    </view>
+
+    <view class="line forth">
+      <view class="left">
+        <image class="forth-img" mode="scaleToFill" src="/resources/img/nutcracker.jpg"></image>
+      </view>
+      <view class="right">
+        <view class="top">
+          <view class="cl4">
+            <image class="cl4-img" mode="scaleToFill" src="/resources/img/spring.jpg"></image>
+          </view>
+          <view class="cl4">
+            <image class="cl4-img" mode="scaleToFill" src="/resources/img/summer.jpg"></image>
+          </view>
+        </view>
+        <view class="bottom">
+          <view class="cl4">
+            <image class="cl4-img" mode="scaleToFill" src="/resources/img/autumn.jpg"></image>
+          </view>
+          <view class="cl4">
+            <image class="cl4-img" mode="scaleToFill" src="/resources/img/winter.jpg"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="line one-img">
+      <text class="alone-line-text">风流就在这朵海棠花</text>
+      <image class="poster" mode="scaleToFill" src="/resources/img/ht1.jpg"></image>
+    </view>
+    <view class="line one-img">
+      <image class="poster" mode="scaleToFill" src="/resources/img/ht2.jpg"></image>
+    </view>
+    <view class="line one-img">
+      <image class="poster" mode="scaleToFill" src="/resources/img/ht3.jpg"></image>
+    </view>
+  </scroll-view>
+</view>

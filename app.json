@@ -5,7 +5,8 @@
     "pages/richtext/richtext",
     "pages/view/viewlist/viewlist",
     "pages/view/scrollview/scrollview",
-    "pages/view/tableview/tableview"
+    "pages/view/tableview/tableview",
+    "pages/view/swiper/swiper"
   ],
   "window": {
     "backgroundTextStyle": "light",

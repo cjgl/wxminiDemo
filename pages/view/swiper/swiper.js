@@ -1,11 +1,19 @@
-// pages/view/viewlist/viewlist.js
+// pages/view/swiper/swiper.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imgUrls: [
+      '/resources/img/ht1.jpg',
+      '/resources/img/ht2.jpg',
+      '/resources/img/ht3.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 5000,
+    duration: 1000
   },
 
   /**
@@ -63,19 +71,24 @@ Page({
   onShareAppMessage: function () {
 
   },
-  toScrollView:function(e){
-    wx.navigateTo({
-      url: '../scrollview/scrollview'
-    });
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
   },
-  toTableView: function (e) {
-    wx.navigateTo({
-      url: '../tableview/tableview'
-    });
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
   },
-  toSwiper: function (e) {
-    wx.navigateTo({
-      url: '../swiper/swiper'
-    });
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
+    })
   }
 })
