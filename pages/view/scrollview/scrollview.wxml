@@ -1,0 +1,19 @@
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+        <view bindtap="toNav" data-seq="1" class="top-btn {{nav1}}">东</view>
+        <view bindtap="toNav" data-seq="2" class="top-btn {{nav2}}">西</view>
+        <view bindtap="toNav" data-seq="3" class="top-btn {{nav3}}">南</view>
+        <view bindtap="toNav" data-seq="4" class="top-btn {{nav4}}">北</view>
+        <view bindtap="toNav" data-seq="5" class="top-btn {{nav5}}">春季</view>
+        <view bindtap="toNav" data-seq="6" class="top-btn {{nav6}}">夏季</view>
+        <view bindtap="toNav" data-seq="7" class="top-btn {{nav7}}">秋季</view>
+        <view bindtap="toNav" data-seq="8" class="top-btn {{nav8}}">冬季</view>
+    </scroll-view>
+</view>
+
+<scroll-view scroll-y="true" style="height: 600px;" class="">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+    
+</scroll-view>

@@ -6,8 +6,8 @@
   </view>
 
   <view class="infoView">
-    <view bindtap="bindViewTapTestVIew" class="infoItem">
-      <text>测试视图VIEW</text>
+    <view bindtap="toViewList" class="infoItem">
+      <text>布局</text>
     </view>
     <view bindtap="toRichText" class="infoItem">
       <text>富文本</text>

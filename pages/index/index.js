@@ -55,5 +55,10 @@ Page({
     wx.navigateTo({
       url: '../richtext/richtext'
     })
+  },
+  toViewList: function (e) {
+    wx.navigateTo({
+      url: '../view/viewlist/viewlist'
+    })
   }
 })

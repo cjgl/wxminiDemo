@@ -1,0 +1,7 @@
+<!--pages/view/viewlist/viewlist.wxml-->
+<view>
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="item" bindtap="toScrollView"><text>布局1</text></view>
+    <view class="item" bindtap="toTableView"><text>table</text></view>
+  </scroll-view>
+</view>

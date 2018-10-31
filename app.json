@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/richtext/richtext"
+    "pages/richtext/richtext",
+    "pages/view/viewlist/viewlist",
+    "pages/view/scrollview/scrollview",
+    "pages/view/tableview/tableview"
   ],
   "window": {
     "backgroundTextStyle": "light",
