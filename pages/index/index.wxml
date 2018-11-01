@@ -10,7 +10,10 @@
       <text>布局</text>
     </view>
     <view bindtap="toRichText" class="infoItem">
-      <text>富文本</text>
+      <text>富文本(表格)</text>
+    </view>
+    <view bindtap="toTableTemplateTpl" class="infoItem">
+      <text>模板</text>
     </view>
   </view>
 

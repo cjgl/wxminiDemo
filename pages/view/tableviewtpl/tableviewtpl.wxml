@@ -1,0 +1,2 @@
+<import src="../../template/table-template.wxml"/>
+<template is="table-template" data="{{listData}}"/>

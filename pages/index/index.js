@@ -60,5 +60,10 @@ Page({
     wx.navigateTo({
       url: '../view/viewlist/viewlist'
     })
+  },
+  toTableTemplateTpl: function (e) {
+    wx.navigateTo({
+      url: '../view/tableviewtpl/tableviewtpl'
+    })
   }
 })

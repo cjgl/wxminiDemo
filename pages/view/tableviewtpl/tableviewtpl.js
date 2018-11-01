@@ -1,11 +1,39 @@
-// pages/richtext/richtext.js
+// pages/view/tableviewtpl/tableviewtpl.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nodes: "<table style='border:1px solid #0094ff;border-collapse:collapse;padding:2px;'><thead><tr><th style='border:1px solid #0094ff;'>序号</th><th style='border:1px solid #0094ff;'>姓名</th></tr></thead><tbody><tr><td style='border:1px solid #0094ff;'>1</td><td style='border:1px solid #0094ff;'>Tom</td></tr><tr><td style='border:1px solid #0094ff;'>2</td><td style='border:1px solid #0094ff;'>Jerry</td></tr></tbody></table>"
+    listData: [{
+      "code": "01",
+      "month": "1月",
+      "number": "12"
+    }, {
+      "code": "02",
+      "month": "2月",
+      "number": "120"
+    }, {
+      "code": "03",
+      "month": "3月",
+      "number": "20"
+    }, {
+      "code": "04",
+      "month": "4月",
+      "number": "50"
+    }, {
+      "code": "05",
+      "month": "5月",
+      "number": "30"
+    }, {
+      "code": "06",
+      "month": "6月",
+      "number": "16"
+    }, {
+      "code": "07",
+      "month": "7月",
+      "number": "40"
+    }]
   },
 
   /**

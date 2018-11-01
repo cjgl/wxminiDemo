@@ -1,0 +1,21 @@
+<template name="table-template">
+<view class="tpl-table">
+  <view class="tpl-tr tpl-bg-w">
+    <view class="tpl-th">序号</view>
+    <view class="tpl-th">月份</view>
+    <view class="tpl-th">销量</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tpl-tr tpl-bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="tpl-td">{{item.code}}</view>
+      <view class="tpl-td">{{item.month}}</view>
+      <view class="tpl-td">{{item.number}}</view>
+    </view>
+    <view class="tpl-tr" wx:else>
+      <view class="tpl-td">{{item.code}}</view>
+      <view class="tpl-td">{{item.month}}</view>
+      <view class="tpl-td">{{item.number}}</view>
+    </view>
+  </block>
+</view>
+</template>
