@@ -3,11 +3,17 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/richtext/richtext",
-    "pages/view/viewlist/viewlist",
     "pages/view/scrollview/scrollview",
     "pages/view/tableview/tableview",
     "pages/view/swiper/swiper",
-    "pages/view/tableviewtpl/tableviewtpl"
+    "pages/view/tableviewtpl/tableviewtpl",
+    "pages/charts/area/area",
+    "pages/charts/column/column",
+    "pages/charts/line/line",
+    "pages/charts/pie/pie",
+    "pages/charts/radar/radar",
+    "pages/charts/ring/ring",
+    "pages/charts/scrollline/scrollline"
   ],
   "window": {
     "backgroundTextStyle": "light",

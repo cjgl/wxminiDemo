@@ -1,23 +1,33 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <image class="userinfo-avatar" src="{{picUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">开发：{{author}}</text>
+<view class="">
+  <view class="authorinfo">
+    <image class="author-avatar" src="{{picUrl}}" background-size="cover"></image>
+    <text>开发：{{author}}</text>
   </view>
-
-  <view class="infoView">
-    <view bindtap="toViewList" class="infoItem">
-      <text>布局</text>
-    </view>
-    <view bindtap="toRichText" class="infoItem">
-      <text>富文本(表格)</text>
-    </view>
-    <view bindtap="toTableTemplateTpl" class="infoItem">
-      <text>模板</text>
-    </view>
+  <view class="authorinfo">
+    <text>v1.0</text>
   </view>
+</view>
 
-  <view class="version">
-    <text>v1.0</text> 
+<view class="vbody">
+  <view class="kind-list">
+    <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+      <view class="kind-list-item">
+        <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+          <view class="kind-list-text">{{item.name}}</view>
+          <image class="kind-list-img" src="{{item.img}}"></image>
+        </view>
+        <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+          <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+            <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+              <navigator url="{{page.url}}" class="navigator">
+                <view class="navigator-text">{{page.pageName}}</view>
+                <view class="navigator-arrow"></view>
+              </navigator>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
   </view>
 </view>
