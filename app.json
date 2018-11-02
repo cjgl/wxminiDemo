@@ -13,7 +13,8 @@
     "pages/charts/pie/pie",
     "pages/charts/radar/radar",
     "pages/charts/ring/ring",
-    "pages/charts/scrollline/scrollline"
+    "pages/charts/scrollline/scrollline",
+    "pages/view/dialogCmp/dialogCmp"
   ],
   "window": {
     "backgroundTextStyle": "light",

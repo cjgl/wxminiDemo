@@ -34,13 +34,16 @@ Page({
       }]
     }, {
       id: 'template',
-      name: '模板',
+      name: '模板&组件',
       open: false,
       img: '/resources/img/form.png',
       pages: [{
         pageName: '表格模板',
         url: '/pages/view/tableviewtpl/tableviewtpl'
-      }]
+      }, {
+          pageName: '对话框组件',
+          url: '/pages/view/dialogCmp/dialogCmp'
+        }]
     }, {
       id: 'charts',
       name: ' 统计图表',
